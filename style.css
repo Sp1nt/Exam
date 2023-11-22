@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-
+visible
 
 
 *{
@@ -109,11 +109,7 @@ a:active {
 
 
 
-body {
-  background-color: #131313;
-  padding-top: 103px;
 
-}
 
 img {
   max-width: 100%;
@@ -132,7 +128,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1515px;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
@@ -201,30 +197,29 @@ img {
   transition: .5s;
 }
 
-.main_img.__mobile#vr_icon {
+#vr_icon {
   width: 140px;
   height: 140px;
 }
 
-.main_img.__mobile#ar_icon {
+#ar_icon {
   width: 120px;
   height: 120px;
 }
 
-.main_img.__mobile#it_icon {
+#it_icon {
   width: 120px;
   height: 120px;
 }
 
-.main_img.__mobile#ai_icon {
+#ai_icon {
   width: 130px;
   height: 130px;
 }
 
 .main_num {
   font: 15px 'BebasNeueBook';
-  line-height: 1;
-  padding-right: 8px;
+
   display: inline-block;
   border-bottom: 2px solid;
   margin-bottom: 15px;
@@ -278,63 +273,39 @@ img {
 
 .main_social {
   display: block;
-  width: 35px;
-  height: 35px;
-  background-size: 35px 35px;
+  width: 45px;
+  height: 45px;
+  background-size: 40px 40px;
   transition: 0.5s;
   margin-bottom: 32px;
 }
 
-.main_presentation {
-  text-decoration: none;
-  position: relative;
-  left: 2px;
-  display: block;
-}
-
-.main_presentation-ico {
-  width: 31px;
-  height: 37px;
-  display: block;
-  background-image: url("../img/presentation_icon.svg");
+.instagram {
+  background-image: url("img/instagram.svg");
   background-position: top left;
   background-repeat: no-repeat;
-  transition: 0.5s;
 }
-
-.main_presentation:hover .main_presentation-ico {
-  background-image: url("../img/presentation_icon_hover.svg");
+.instagram:hover {
+  background-image: url("img/instagram_hover.svg");
   background-position: top left;
   background-repeat: no-repeat;
 }
 
-.nav .main_presentation:hover .main_presentation-ico {
-  background-image: url("../img/presentation_icon_hover-2.svg");
+.facebook {
+  background-image: url("img/telegram.svg");
   background-position: top left;
   background-repeat: no-repeat;
+ 
 }
 
-.main_presentation-text {
-  font: 16px 'BebasNeueBook';
-  color: #8f8f8f;
-  letter-spacing: 1.7px;
-  transform: rotate(-90deg);
-  display: block;
-  position: absolute;
-  top: 145px;
-  left: 6px;
-  transform-origin: left top;
-  transition: 0.5s;
-  padding-right: 30px;
+.facebook:hover {
+  background-image: url("img/telegram_hover.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+ 
 }
 
-.main_presentation:hover .main_presentation-text {
-  color: #fee900;
-}
 
-.nav .main_presentation:hover .main_presentation-text {
-  color: #000;
-}
 
 .main_right-menu {
   position: absolute;
@@ -347,37 +318,30 @@ img {
   height: 158px;
   width: 1px;
   background: #ffffff;
-  margin-bottom: 56px;
+  margin-bottom: 126px;
   transition: 0.5s;
 }
 
-.main_right-menu-line-2 {
-  height: 16px;
-  width: 1px;
-  background: #ffffff;
-  transition: 0.5s;
-}
 
 .main_right-menu-link {
   position: absolute;
   transform: rotate(90deg);
   transform-origin: 100% 100%;
-  font: 26px 'BebasNeueRegular';
+  font: 16px 'BebasNeueRegular';
   color: #f5f5f5;
   letter-spacing: 1px;
-  text-decoration: none;
   bottom: 18px;
   right: 8px;
   transition: 0.5s;
 }
 
-.main_right-menu:hover .main_right-menu-line-1,
-.main_right-menu:hover .main_right-menu-line-2 {
+.main_right-menu:hover .main_right-menu-line-1{
   background: #fee900;
 }
 
 .main_right-menu:hover .main_right-menu-link {
   color: #fee900;
+  text-decoration: none;
 }
 
 .box-projects {
@@ -471,14 +435,13 @@ img {
   /* test */
 } 
 
-.lazyload,
-.lazyloading {
-    opacity: 0;
+.box-projects_pic img {
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 95%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 95%);
+
 }
-.lazyloaded {
-    opacity: 1;
-    transition: opacity .5s;
-}
+
+
 
 .box-projects_caption {    
   text-decoration: none;
@@ -704,14 +667,8 @@ text-decoration: none;
   transform: translateX(0);
   }
 
-  .about-block.__new {
-    padding-bottom: 14px;
-}
-.__new .about-block_content::before,
-.__new .about-block_content::after {
-  content: '';
-  display: none;
-}
+
+
 
 .about-block_content {
   padding-right: 187px;
@@ -782,7 +739,7 @@ text-decoration: none;
 
 .box-blog {
   padding-top: 15px;
-  padding-bottom: 151px;
+  padding-bottom: 121px;
   background: #131313;
 }
 
@@ -1157,31 +1114,7 @@ text-decoration: none;
   width: 162px;
 }
 
-.footer_icon.__instagram {
-  background-image: url("../img/instagram_icon.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  margin-bottom: 16px;
-}
 
-.footer_icon.__instagram:hover {
-  background-image: url("../img/instagram_icon_hover.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-
-.footer_icon.__facebook {
-  background-image: url("../img/facebook_icon.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  margin-bottom: 13px;
-}
-
-.footer_icon.__facebook:hover {
-  background-image: url("../img/facebook_icon_hover.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
-}
 
 
 .link {
@@ -1565,179 +1498,14 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-/*media QUESTIE*/
-@media screen and (max-width: 1200px) {
-  .wc_questie-text2 {
-      width: 80%;
-  }
-  .wc_questie-text2 ul li {
-      width: 40%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .wc_questie-img--1 {
-      width: 100%;
-      min-height: 800px;
-      background-position: center bottom;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }        
-  .wc_questie-img--2 {
-      width: 100%;
-      min-height: 800px;
-      background-position: center bottom;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }    
-  .wc_questie-img--3 {
-      width: 100%;
-      min-height: 700px;
-      background-position: center bottom;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
-  
-  .wc_questie-text {
-      width: 80%;
-  }
-  .wc_questie-text4 {
-      width: 80%;
-  }
-}
 
-/*media MUSEUM*/
-@media screen and (max-width: 1200px) {
-  .work--museum .work_title {
-      position: relative;
-      top: 5px;
-      margin-bottom: 250px;
-  }
-  .work--museum .work_row .work_col:nth-child(2) {
-      left: 0;
-  }
-  .wc_museum .emba_row-content .emba_col:nth-child(2) {
-      left: 0;
-  }    
-}
+
+
 
 
 /*<767*/
-@media screen and (max-width: 767px) {
-  .work--museum .work_title {        
-      top: 0;
-      margin-bottom: 30px;
-  }
-  .work--museum .work_main-content {
-      padding-bottom: 30px;
-  }    
-  .work--museum .work_main {
-      padding-top: 40px;
-  }
-  .work--skill-shot .work_title {
-      margin-bottom: 30px;
-  }
-  .work--skill-shot .work_main {
-      padding-top: 40px;
-  }
-  .work--skill-shot .work_main-content {
-      padding-bottom: 30px;
-  } 
-  
-  .work--skill-shot .work_row .work_col:nth-child(2) {
-      padding-left: 0px;
-    padding-top: 0px;
-  }   
-  .wc_skill_shot {
-      width: 85%;
-  } 
-  .wc_skill_shot-img {        
-      margin: 4px 0 15vw;
-  }
-  .wc_skill_shot-text1 {
-      font: 17px/22px 'Lato-Regular'; 
-  }    
-  .wc_skill_shot-text2 {   
-      font: 25px 'BebasNeueRegular';    
-  }
-  .wc_skill_shot-link {
-      margin: 17vw 0 22vw 0;
-      font: 25px/30px 'BebasNeueRegular';    
-  }    
-  
-  .wc_questie {
-      padding-top: 14px;
-  }
-  .work--questie .work_title span {
-      font-size: 31px;
-      top: 2px;
-  }    
-  .work--questie .work_title {
-      margin-bottom: 30px;
-  }    
-  .work--questie .work_main {
-      padding-top: 95px;
-  }
-  .work--questie .work_main-content {
-      padding-bottom: 40px;
-  }   
-  
-  .wc_questie-img--1 {
-      width: 100%;
-      min-height: 350px;
-  }
-  .wc_questie-text {
-      padding: 85px 0 45px;
-      font: 16.6px/1.3 'Lato-Regular';
-  }
-  
-  .wc_questie-img--2 {
-      width: 100%;
-      min-height: 350px;
-  }
-      
-  .wc_questie-text2 > p:first-child { 
-      width: 100%;
-      padding: 78px 0 74px;
-      font: 16.6px/1.3 'Lato-Regular';
-  }    
-  
-  .wc_questie-text2 ul li {
-      width: 100%;
-      margin-bottom: 57px;
-  }
-  .wc_questie-text2 ul li strong {    
-      padding: 0 0 15px 0;
-      font: 25px 'BebasNeueRegular';    
-  }    
-  .wc_questie-text2 ul li p {    
-      font-size: 16.6px;
-      line-height: 1.3;    
-  }
-  .wc_questie-text2 > p:last-child {
-      width: 100%;
-      padding: 28px 0 83px;
-      font: 16.6px/1.3 'Lato-Regular';
-  }
-  .wc_questie-img--3 { 
-      min-height: 330px;
-  }
-  
-  .wc_questie-text4 {
-      padding: 78px 0 71px;
-      font: 16.6px/1.3 'Lato-Regular'; 
-  }  
-  .wc_questie_download {
-      padding-bottom: 60px;
-  }
-  .wc_questie_download p {
-      padding-bottom: 30px;    
-      font: 25px 'BebasNeueRegular';
-  }      
-  .wc_questie_download a { 
-      width: 80px;
-      height: 80px;
-      margin: 0 16px;
-  }
+@media screen and (max-width: 768px) {
+
   
   /*HOME*/
   .box-projects_header {
@@ -1763,12 +1531,7 @@ input:focus::-webkit-input-placeholder {
       top: 0;
       padding: 4vw 20% 3.5vw 4%;
       transform: translate(0, 0);
-      font: 14px/16px 'Lato-Medium';        
-      /*background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(0,0,0,0.7) 73%, rgba(0,0,0,0) 92%, rgba(0,0,0,0) 100%);
-      background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 58%,rgba(0,0,0,0.7) 73%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 100%);
-      background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 58%,rgba(0,0,0,0.7) 73%,rgba(0,0,0,0) 92%,rgba(0,0,0,0) 100%);
-      */
-
+      font: 14px/16px 'Lato-Medium';       
   }    
   .box-projects_title {
       font: 24px/28px 'BebasNeueBold';
