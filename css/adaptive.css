@@ -40,7 +40,8 @@
   }
   
   .about-block_title {
-    left: 0;
+    top: -56px;
+    left: -55px;
   }
   
   
@@ -234,10 +235,7 @@
     width: auto;
   }
   
-  .about-block_title {
-    font-size: 97.3px;
-    left: -46px;
-  }
+
   
   .blog-block_item {
     padding-right: 15px;
@@ -514,8 +512,9 @@
 
   
   .about-block_title {
-    font-size: 97.3px;
-    left: -46px;
+    font-size: 37.3px;
+    left: -26px;
+    top: 56px;
   }
   
   .blog-block_item {
@@ -600,8 +599,9 @@ body {
 
 
 .about-block_title {
-  font-size: 97.3px;
-  left: -46px;
+  font-size: 27.3px;
+ 
+  top: 76px;
 }
 
 .blog-block_item {
