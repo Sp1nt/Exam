@@ -129,6 +129,7 @@ img {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
   padding-right: 60px;
 }
 
@@ -352,7 +353,7 @@ img {
 
 .box-projects_filters span:not(.active):hover {  
 
-        animation: 3s linear 0s 1 alternate filter-hover;           
+   animation: 3s linear 0s 1 alternate filter-hover;           
 }
 
 .box-projects_filters span::after {
@@ -730,10 +731,6 @@ text-decoration: none;
 .box-blog .blog-block_image img {
     width: 100%;
     height: auto;    
-    /*object-fit:cover;
-    object-position: center top;*/
-    /*width: auto;
-    height: 206px;*/
 }
 
 .lazyload,
