@@ -79,43 +79,6 @@ img {
 
 
 
-
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-
-ol,
-ul {
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  outline: none;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
 .header {
   height: 103px;
   background: #191919;
@@ -219,7 +182,8 @@ img {
 
 .main_num {
   font: 15px 'BebasNeueBook';
-
+  justify-content: left;
+  align-items: flex-start;
   display: inline-block;
   border-bottom: 2px solid;
   margin-bottom: 15px;
@@ -259,9 +223,7 @@ img {
   z-index: 25;
 }
 
-.nav .main_left-menu {
-  top: 205px;
-}
+
 
 .main_left-menu-line {
   height: 135px;
