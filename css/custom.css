@@ -1,4 +1,4 @@
-@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css);
+
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900);
 
 
@@ -9,6 +9,9 @@ body {
   
   }
   
+  h1{
+    font: 32px 'BebasNeueRegular';
+  }
 
   img {
     max-width: 100%;
@@ -58,3 +61,20 @@ body {
 
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
+
+.navbar {
+  height: 103px;
+
+}
+
+
+.navbar-collapse {
+
+
+  margin-top: 6px;
+
+
+
+}
+
+
